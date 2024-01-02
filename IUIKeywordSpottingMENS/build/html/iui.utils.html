@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>iui.utils package &#8212; The new Keyword Spotting Tools 14.12.2023 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=434ab195"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="iui.gui package" href="iui.gui.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="iui-utils-package">
+<h1>iui.utils package<a class="headerlink" href="#iui-utils-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-iui.utils.KWSStats">
+<span id="iui-utils-kwsstats-module"></span><h2>iui.utils.KWSStats module<a class="headerlink" href="#module-iui.utils.KWSStats" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This Module Class contains methods and properties to create overall 
+statistics for KWS runs. eg it is used to count word occurrences.</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="iui.utils.KWSStats.KWSStats">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iui.utils.KWSStats.</span></span><span class="sig-name descname"><span class="pre">KWSStats</span></span><a class="headerlink" href="#iui.utils.KWSStats.KWSStats" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>classdocs</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KWSStats.KWSStats.increment">
+<span class="sig-name descname"><span class="pre">increment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KWSStats.KWSStats.increment" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KWSStats.KWSStats.increment_document_word_count">
+<span class="sig-name descname"><span class="pre">increment_document_word_count</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KWSStats.KWSStats.increment_document_word_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KWSStats.KWSStats.increment_overall_word_count">
+<span class="sig-name descname"><span class="pre">increment_overall_word_count</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KWSStats.KWSStats.increment_overall_word_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KWSStats.KWSStats.increment_page_word_count">
+<span class="sig-name descname"><span class="pre">increment_page_word_count</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KWSStats.KWSStats.increment_page_word_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-iui.utils.KeywordSpottingMatrixUtils">
+<span id="iui-utils-keywordspottingmatrixutils-module"></span><h2>iui.utils.KeywordSpottingMatrixUtils module<a class="headerlink" href="#module-iui.utils.KeywordSpottingMatrixUtils" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This Module contains helper functions for different list comprehensions 
+and matrix manipulations around the new KWS.</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.add_result_with_conditions">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">add_result_with_conditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comb_conf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.add_result_with_conditions" title="Link to this definition">¶</a></dt>
+<dd><p>Insert result in respect to the confidecne</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.add_result_with_conditions_old">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">add_result_with_conditions_old</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comb_conf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asstring</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.add_result_with_conditions_old" title="Link to this definition">¶</a></dt>
+<dd><p>Adding result to result array, but filter redundant information</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.calculateLineResults">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">calculateLineResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combinations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp_matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.calculateLineResults" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create a string from a symbol index array</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.calculateWordResults">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">calculateWordResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combinations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp_matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.calculateWordResults" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create a string from a symbol index array</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.calculate_confidence_for_occurrences">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">calculate_confidence_for_occurrences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">act_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_value_indexes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.calculate_confidence_for_occurrences" title="Link to this definition">¶</a></dt>
+<dd><p>This method uses the combinations indices to calculate the confidence value from the ConfMat</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.cells_below_threshold">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">cells_below_threshold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.cells_below_threshold" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create a boolean matrix, identifiing Cells below the given threshold</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.clean_ctc_cols_v1">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">clean_ctc_cols_v1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_ctc_cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.clean_ctc_cols_v1" title="Link to this definition">¶</a></dt>
+<dd><p>In nearly all cases the CTC-Windows are the same for all words in the matrix, by removing them in beforehand we are able to reduce the number of combinations by factor of around 0.3</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.clean_ctc_double_occurances_v1">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">clean_ctc_double_occurances_v1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_ctc_double_occurances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.clean_ctc_double_occurances_v1" title="Link to this definition">¶</a></dt>
+<dd><p>If there are two CTC-Characters next to each another, they will bring in no new information, so we can collapse it into one.
+This version removes all subsequences</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.clean_ctc_double_occurances_v2">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">clean_ctc_double_occurances_v2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_ctc_double_occurances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.clean_ctc_double_occurances_v2" title="Link to this definition">¶</a></dt>
+<dd><p>If there are two CTC-Characters next to each another, they will bring in no new information, so we can collapse it into one.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.clean_indices_rules">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">clean_indices_rules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices_arrays</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.clean_indices_rules" title="Link to this definition">¶</a></dt>
+<dd><p>These rules will remove unpossible index combinations in beforehand. for example: Char n must have an greater index than char n-1, and same for above.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.compress_sub_sequences">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">compress_sub_sequences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.compress_sub_sequences" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.count_indices_combination_size">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">count_indices_combination_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices_arrays</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.count_indices_combination_size" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates number of all possible combinations</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.create_corrected_symbols_dict">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">create_corrected_symbols_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_query_indices</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.create_corrected_symbols_dict" title="Link to this definition">¶</a></dt>
+<dd><p>This method will reduce the symbols dict, so that it only contains characters
+from from the search words array</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.ctc_decode">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">ctc_decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctc_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank_symbol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&lt;ctc&gt;'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.ctc_decode" title="Link to this definition">¶</a></dt>
+<dd><p>This method will decode a CTC encoded string</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.extract_combinations">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">extract_combinations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_permutation_symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.extract_combinations" title="Link to this definition">¶</a></dt>
+<dd><p>DEPRECATED: This method was used for the first version, where all possible combinations 
+were build and then the search words were searched in there</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.extract_string_by_indices">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">extract_string_by_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_ctc_decode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.extract_string_by_indices" title="Link to this definition">¶</a></dt>
+<dd><p>creates a string by the symbol mapping and collects confidecne values from confmat for given array of character indices</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.find_best">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">find_best</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.find_best" title="Link to this definition">¶</a></dt>
+<dd><p>Get value for the best confidecnes</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.generate_combinations">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">generate_combinations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_tuples</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.generate_combinations" title="Link to this definition">¶</a></dt>
+<dd><p>Arrays contains an array for every search word charcater index. This method will build all possible combinations from it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.generate_combinations_full">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">generate_combinations_full</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrays</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.generate_combinations_full" title="Link to this definition">¶</a></dt>
+<dd><p>Arrays contains an array for every search word charcater index. This method will build all possible combinations from it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.generate_combinations_with_rules">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">generate_combinations_with_rules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrays</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.generate_combinations_with_rules" title="Link to this definition">¶</a></dt>
+<dd><p>Arrays contains an array for every search word charcater index. This method will build all possible combinations from it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.generate_hex_hash">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">generate_hex_hash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.generate_hex_hash" title="Link to this definition">¶</a></dt>
+<dd><p>Generates a fixed hash from a string</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.getCharIdFromSymbols">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">getCharIdFromSymbols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charString</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.getCharIdFromSymbols" title="Link to this definition">¶</a></dt>
+<dd><p>Get character ID by character from symbols dictionary</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.get_indices">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">get_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_space</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.get_indices" title="Link to this definition">¶</a></dt>
+<dd><p>This method converts all strings of a given array to an array of symbol indices</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.get_wildcard_indices">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">get_wildcard_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.get_wildcard_indices" title="Link to this definition">¶</a></dt>
+<dd><p>DEPRECATED</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.merge_and_clean">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">merge_and_clean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_query_indices</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.merge_and_clean" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create an array of unique symbol indices</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingMatrixUtils.split_matrix">
+<span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingMatrixUtils.</span></span><span class="sig-name descname"><span class="pre">split_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">by_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingMatrixUtils.split_matrix" title="Link to this definition">¶</a></dt>
+<dd><p>This method will split a matrix into 2 matrices at given column index</p>
+</dd></dl>
+
+</section>
+<section id="module-iui.utils.KeywordSpottingUtils">
+<span id="iui-utils-keywordspottingutils-module"></span><h2>iui.utils.KeywordSpottingUtils module<a class="headerlink" href="#module-iui.utils.KeywordSpottingUtils" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This Class contains Methods for the KWS Tool needed to read and write
+PyLaia and Transkribus Data</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iui.utils.KeywordSpottingUtils.</span></span><span class="sig-name descname"><span class="pre">KeywordSpottingUtils</span></span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.adjust_confidence_by_best_lenght">
+<span class="sig-name descname"><span class="pre">adjust_confidence_by_best_lenght</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valid_occurrences</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">best</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.adjust_confidence_by_best_lenght" title="Link to this definition">¶</a></dt>
+<dd><p>This method is used to reduce the confidecne of the found word, when it differs 
+to much from the best value by length.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.clean_word">
+<span class="sig-name descname"><span class="pre">clean_word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.clean_word" title="Link to this definition">¶</a></dt>
+<dd><p>This method will remove special characters from the given string</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFrequencyListFromMiniOCR">
+<span class="sig-name descname"><span class="pre">createFrequencyListFromMiniOCR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_mini_ocr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwsOptions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFrequencyListFromMiniOCR" title="Link to this definition">¶</a></dt>
+<dd><p>Same as createFrequencyListFromPageDoc, but it will count the words form the
+miniOCR files. Used to compare the F1 Measure between these two approaches.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFrequencyListFromPageDoc">
+<span class="sig-name descname"><span class="pre">createFrequencyListFromPageDoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pageDoc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwsOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFrequencyListFromPageDoc" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create a word frequencies list for all words in the
+given page-doc gt-folder. This was used for evaluation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFullCSV">
+<span class="sig-name descname"><span class="pre">createFullCSV</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">htr_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">delete_old_csv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFullCSV" title="Link to this definition">¶</a></dt>
+<dd><p>Wrapper method to create the result CSV.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createSnippetEntry">
+<span class="sig-name descname"><span class="pre">createSnippetEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">occurrence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createSnippetEntry" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create the line snippet link for the CSV</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.mapResult">
+<span class="sig-name descname"><span class="pre">mapResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valid_occurrences</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">htr_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">best</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.mapResult" title="Link to this definition">¶</a></dt>
+<dd><p>This method will map all the values from the found results dict to a dict containing 
+the CSV field names.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.read_page">
+<span class="sig-name descname"><span class="pre">read_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwsOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions" title="iui.core.KWSOptions.KWSOptions"><span class="pre">KWSOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.read_page" title="Link to this definition">¶</a></dt>
+<dd><p>This methods reads the PyLaia and Transkribus Data needed for the 
+spotting, eg: It collects the page-xml pathes, it creates a dictionary
+from the symbols.txt and reads and normalizes the ConfMats.ark.
+It is also capable to dump and read the normalized matrix.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.spot">
+<span class="sig-name descname"><span class="pre">spot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">htr_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options:</span> <span class="pre">~iui.core.KWSOptions.KWSOptions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats:</span> <span class="pre">~iui.utils.KWSStats.KWSStats</span> <span class="pre">=</span> <span class="pre">&lt;iui.utils.KWSStats.KWSStats</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.spot" title="Link to this definition">¶</a></dt>
+<dd><p>This method will start the spotting for one given page-doc read by read_page-Method</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.writeBest">
+<span class="sig-name descname"><span class="pre">writeBest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_best</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.writeBest" title="Link to this definition">¶</a></dt>
+<dd><p>This method will export all HTR best values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.writeCSV">
+<span class="sig-name descname"><span class="pre">writeCSV</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.writeCSV" title="Link to this definition">¶</a></dt>
+<dd><p>This method will write the final CSV results</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-iui.utils.XmlUtils">
+<span id="iui-utils-xmlutils-module"></span><h2>iui.utils.XmlUtils module<a class="headerlink" href="#module-iui.utils.XmlUtils" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This class module contains methods for reading and traversing the 
+Page XML’s.</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="iui.utils.XmlUtils.XMLUtils">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iui.utils.XmlUtils.</span></span><span class="sig-name descname"><span class="pre">XMLUtils</span></span><a class="headerlink" href="#iui.utils.XmlUtils.XMLUtils" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>classdocs</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.XmlUtils.XMLUtils.bounding_rect">
+<span class="sig-name descname"><span class="pre">bounding_rect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.XmlUtils.XMLUtils.bounding_rect" title="Link to this definition">¶</a></dt>
+<dd><p>This method will create a bounding rectangle for a given set of points/coords</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.XmlUtils.XMLUtils.createMetadataDict">
+<span class="sig-name descname"><span class="pre">createMetadataDict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array_of_xml_paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.XmlUtils.XMLUtils.createMetadataDict" title="Link to this definition">¶</a></dt>
+<dd><p>This method reads pageNr, imgUrl and docId from the TranskribusMetadata-Element in the 
+PageXML Header for all given xml file pathes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.utils.XmlUtils.XMLUtils.createTextLineDict">
+<span class="sig-name descname"><span class="pre">createTextLineDict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array_of_xml_paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.utils.XmlUtils.XMLUtils.createTextLineDict" title="Link to this definition">¶</a></dt>
+<dd><p>This method will read the coords for every line in the document and
+will create a dictionary with the line identifiers as key and coords as value</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="iui.utils.XmlUtils.XMLUtils.namespace">
+<span class="sig-name descname"><span class="pre">namespace</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15'</span></em><a class="headerlink" href="#iui.utils.XmlUtils.XMLUtils.namespace" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-iui.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-iui.utils" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">The new Keyword Spotting Tools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">iui</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="iui.html">iui package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">iui</a><ul>
+  <li><a href="iui.html">iui package</a><ul>
+      <li>Previous: <a href="iui.gui.html" title="previous chapter">iui.gui package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Raphael Unterweger.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/iui.utils.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

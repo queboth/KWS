@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>iui.core package &#8212; The new Keyword Spotting Tools 14.12.2023 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=434ab195"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="iui.gui package" href="iui.gui.html" />
+    <link rel="prev" title="iui.cli package" href="iui.cli.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="iui-core-package">
+<h1>iui.core package<a class="headerlink" href="#iui-core-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-iui.core.KWSBatch">
+<span id="iui-core-kwsbatch-module"></span><h2>iui.core.KWSBatch module<a class="headerlink" href="#module-iui.core.KWSBatch" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This is the CLI Batch Module to start a spotting run on mutiple  
+confMats.ark. For a list of possible arguments please start 
+the Programm with the -h argument:
+python -m iui.core.KWSBatch -h</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.KWSBatch.log_error">
+<span class="sig-prename descclassname"><span class="pre">iui.core.KWSBatch.</span></span><span class="sig-name descname"><span class="pre">log_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">document_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSBatch.log_error" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.KWSBatch.merge_results">
+<span class="sig-prename descclassname"><span class="pre">iui.core.KWSBatch.</span></span><span class="sig-name descname"><span class="pre">merge_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSBatch.merge_results" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.KWSBatch.parse_arguments">
+<span class="sig-prename descclassname"><span class="pre">iui.core.KWSBatch.</span></span><span class="sig-name descname"><span class="pre">parse_arguments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSBatch.parse_arguments" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.KWSBatch.process_document">
+<span class="sig-prename descclassname"><span class="pre">iui.core.KWSBatch.</span></span><span class="sig-name descname"><span class="pre">process_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">document_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_confidence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_reduction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalization_power</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwsOptions=&lt;iui.core.KWSOptions.KWSOptions</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSBatch.process_document" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.KWSBatch.process_documents_in_folder">
+<span class="sig-prename descclassname"><span class="pre">iui.core.KWSBatch.</span></span><span class="sig-name descname"><span class="pre">process_documents_in_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_words</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_confidence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_reduction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalization_power</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwsOptions=&lt;iui.core.KWSOptions.KWSOptions</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSBatch.process_documents_in_folder" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.KWSBatch.setup_logging">
+<span class="sig-prename descclassname"><span class="pre">iui.core.KWSBatch.</span></span><span class="sig-name descname"><span class="pre">setup_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSBatch.setup_logging" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-iui.core.KWSOptions">
+<span id="iui-core-kwsoptions-module"></span><h2>iui.core.KWSOptions module<a class="headerlink" href="#module-iui.core.KWSOptions" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This Module hold all the Options for the KWS Tool and also a method 
+to parse CLI argumnets and map them to the Options.</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="iui.core.KWSOptions.KWSOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iui.core.KWSOptions.</span></span><span class="sig-name descname"><span class="pre">KWSOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_parse_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSOptions.KWSOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>classdocs</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="iui.core.KWSOptions.KWSOptions.parse_args">
+<span class="sig-name descname"><span class="pre">parse_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.KWSOptions.KWSOptions.parse_args" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-iui.core.MergeResults">
+<span id="iui-core-mergeresults-module"></span><h2>iui.core.MergeResults module<a class="headerlink" href="#module-iui.core.MergeResults" title="Link to this heading">¶</a></h2>
+<p>This is the new Keyword Spotting Tool, which spot’s search terms 
+in the PyLaia ConfMats.ark.</p>
+<p>This is the CLI MergeResults Module to concat all results of a 
+given RUN_ID recursivly into one CSV file.</p>
+<p>Copyright (C) 2023  Raphael Unterweger</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.MergeResults.main">
+<span class="sig-prename descclassname"><span class="pre">iui.core.MergeResults.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.MergeResults.main" title="Link to this definition">¶</a></dt>
+<dd><p>Print GNU GPL Messages</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="iui.core.MergeResults.merge_csv_files">
+<span class="sig-prename descclassname"><span class="pre">iui.core.MergeResults.</span></span><span class="sig-name descname"><span class="pre">merge_csv_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iui.core.MergeResults.merge_csv_files" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-iui.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-iui.core" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">The new Keyword Spotting Tools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">iui</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="iui.html">iui package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">iui</a><ul>
+  <li><a href="iui.html">iui package</a><ul>
+      <li>Previous: <a href="iui.cli.html" title="previous chapter">iui.cli package</a></li>
+      <li>Next: <a href="iui.gui.html" title="next chapter">iui.gui package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Raphael Unterweger.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/iui.core.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

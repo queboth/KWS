@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>iui package &#8212; The new Keyword Spotting Tools 14.12.2023 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=434ab195"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="iui.cli package" href="iui.cli.html" />
+    <link rel="prev" title="iui" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="iui-package">
+<h1>iui package<a class="headerlink" href="#iui-package" title="Link to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="iui.cli.html">iui.cli package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iui.cli.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iui.cli.html#module-iui.cli.KWS">iui.cli.KWS module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iui.cli.html#module-iui.cli">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iui.core.html">iui.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iui.core.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iui.core.html#module-iui.core.KWSBatch">iui.core.KWSBatch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSBatch.log_error"><code class="docutils literal notranslate"><span class="pre">log_error()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSBatch.merge_results"><code class="docutils literal notranslate"><span class="pre">merge_results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSBatch.parse_arguments"><code class="docutils literal notranslate"><span class="pre">parse_arguments()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSBatch.process_document"><code class="docutils literal notranslate"><span class="pre">process_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSBatch.process_documents_in_folder"><code class="docutils literal notranslate"><span class="pre">process_documents_in_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSBatch.setup_logging"><code class="docutils literal notranslate"><span class="pre">setup_logging()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.core.html#module-iui.core.KWSOptions">iui.core.KWSOptions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions"><code class="docutils literal notranslate"><span class="pre">KWSOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="iui.core.html#iui.core.KWSOptions.KWSOptions.parse_args"><code class="docutils literal notranslate"><span class="pre">KWSOptions.parse_args()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.core.html#module-iui.core.MergeResults">iui.core.MergeResults module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.MergeResults.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.core.html#iui.core.MergeResults.merge_csv_files"><code class="docutils literal notranslate"><span class="pre">merge_csv_files()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.core.html#module-iui.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iui.gui.html">iui.gui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iui.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iui.gui.html#module-iui.gui.KWSGUI">iui.gui.KWSGUI module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.gui.html#iui.gui.KWSGUI.KWSOptionsGUI"><code class="docutils literal notranslate"><span class="pre">KWSOptionsGUI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="iui.gui.html#iui.gui.KWSGUI.KWSOptionsGUI.TextRedirector"><code class="docutils literal notranslate"><span class="pre">KWSOptionsGUI.TextRedirector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.gui.html#iui.gui.KWSGUI.KWSOptionsGUI.TextWidgetHandler"><code class="docutils literal notranslate"><span class="pre">KWSOptionsGUI.TextWidgetHandler</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.gui.html#iui.gui.KWSGUI.KWSOptionsGUI.browse_directory"><code class="docutils literal notranslate"><span class="pre">KWSOptionsGUI.browse_directory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.gui.html#iui.gui.KWSGUI.KWSOptionsGUI.create_options_frame"><code class="docutils literal notranslate"><span class="pre">KWSOptionsGUI.create_options_frame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.gui.html#iui.gui.KWSGUI.KWSOptionsGUI.run_program"><code class="docutils literal notranslate"><span class="pre">KWSOptionsGUI.run_program()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.gui.html#module-iui.gui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iui.utils.html">iui.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iui.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iui.utils.html#module-iui.utils.KWSStats">iui.utils.KWSStats module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KWSStats.KWSStats"><code class="docutils literal notranslate"><span class="pre">KWSStats</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KWSStats.KWSStats.increment"><code class="docutils literal notranslate"><span class="pre">KWSStats.increment()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KWSStats.KWSStats.increment_document_word_count"><code class="docutils literal notranslate"><span class="pre">KWSStats.increment_document_word_count()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KWSStats.KWSStats.increment_overall_word_count"><code class="docutils literal notranslate"><span class="pre">KWSStats.increment_overall_word_count()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KWSStats.KWSStats.increment_page_word_count"><code class="docutils literal notranslate"><span class="pre">KWSStats.increment_page_word_count()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.utils.html#module-iui.utils.KeywordSpottingMatrixUtils">iui.utils.KeywordSpottingMatrixUtils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.add_result_with_conditions"><code class="docutils literal notranslate"><span class="pre">add_result_with_conditions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.add_result_with_conditions_old"><code class="docutils literal notranslate"><span class="pre">add_result_with_conditions_old()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.calculateLineResults"><code class="docutils literal notranslate"><span class="pre">calculateLineResults()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.calculateWordResults"><code class="docutils literal notranslate"><span class="pre">calculateWordResults()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.calculate_confidence_for_occurrences"><code class="docutils literal notranslate"><span class="pre">calculate_confidence_for_occurrences()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.cells_below_threshold"><code class="docutils literal notranslate"><span class="pre">cells_below_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.clean_ctc_cols_v1"><code class="docutils literal notranslate"><span class="pre">clean_ctc_cols_v1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.clean_ctc_double_occurances_v1"><code class="docutils literal notranslate"><span class="pre">clean_ctc_double_occurances_v1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.clean_ctc_double_occurances_v2"><code class="docutils literal notranslate"><span class="pre">clean_ctc_double_occurances_v2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.clean_indices_rules"><code class="docutils literal notranslate"><span class="pre">clean_indices_rules()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.compress_sub_sequences"><code class="docutils literal notranslate"><span class="pre">compress_sub_sequences()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.count_indices_combination_size"><code class="docutils literal notranslate"><span class="pre">count_indices_combination_size()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.create_corrected_symbols_dict"><code class="docutils literal notranslate"><span class="pre">create_corrected_symbols_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.ctc_decode"><code class="docutils literal notranslate"><span class="pre">ctc_decode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.extract_combinations"><code class="docutils literal notranslate"><span class="pre">extract_combinations()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.extract_string_by_indices"><code class="docutils literal notranslate"><span class="pre">extract_string_by_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.find_best"><code class="docutils literal notranslate"><span class="pre">find_best()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.generate_combinations"><code class="docutils literal notranslate"><span class="pre">generate_combinations()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.generate_combinations_full"><code class="docutils literal notranslate"><span class="pre">generate_combinations_full()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.generate_combinations_with_rules"><code class="docutils literal notranslate"><span class="pre">generate_combinations_with_rules()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.generate_hex_hash"><code class="docutils literal notranslate"><span class="pre">generate_hex_hash()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.getCharIdFromSymbols"><code class="docutils literal notranslate"><span class="pre">getCharIdFromSymbols()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.get_indices"><code class="docutils literal notranslate"><span class="pre">get_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.get_wildcard_indices"><code class="docutils literal notranslate"><span class="pre">get_wildcard_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.merge_and_clean"><code class="docutils literal notranslate"><span class="pre">merge_and_clean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingMatrixUtils.split_matrix"><code class="docutils literal notranslate"><span class="pre">split_matrix()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.utils.html#module-iui.utils.KeywordSpottingUtils">iui.utils.KeywordSpottingUtils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.adjust_confidence_by_best_lenght"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.adjust_confidence_by_best_lenght()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.clean_word"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.clean_word()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFrequencyListFromMiniOCR"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.createFrequencyListFromMiniOCR()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFrequencyListFromPageDoc"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.createFrequencyListFromPageDoc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createFullCSV"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.createFullCSV()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.createSnippetEntry"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.createSnippetEntry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.mapResult"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.mapResult()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.read_page"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.read_page()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.spot"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.spot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.writeBest"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.writeBest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.KeywordSpottingUtils.KeywordSpottingUtils.writeCSV"><code class="docutils literal notranslate"><span class="pre">KeywordSpottingUtils.writeCSV()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.utils.html#module-iui.utils.XmlUtils">iui.utils.XmlUtils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iui.utils.html#iui.utils.XmlUtils.XMLUtils"><code class="docutils literal notranslate"><span class="pre">XMLUtils</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.XmlUtils.XMLUtils.bounding_rect"><code class="docutils literal notranslate"><span class="pre">XMLUtils.bounding_rect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.XmlUtils.XMLUtils.createMetadataDict"><code class="docutils literal notranslate"><span class="pre">XMLUtils.createMetadataDict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.XmlUtils.XMLUtils.createTextLineDict"><code class="docutils literal notranslate"><span class="pre">XMLUtils.createTextLineDict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="iui.utils.html#iui.utils.XmlUtils.XMLUtils.namespace"><code class="docutils literal notranslate"><span class="pre">XMLUtils.namespace</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iui.utils.html#module-iui.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-iui">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-iui" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">The new Keyword Spotting Tools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">iui</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">iui package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">iui</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">iui</a></li>
+      <li>Next: <a href="iui.cli.html" title="next chapter">iui.cli package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Raphael Unterweger.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/iui.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
